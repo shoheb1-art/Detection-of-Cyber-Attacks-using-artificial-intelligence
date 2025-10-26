@@ -1,0 +1,101 @@
+.register-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.register-card {
+    background-color: var(--surface);
+    padding: 2rem 3rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+.register-card h2 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+.input-group {
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+.register-card input {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--background);
+    border: 1px solid var(--secondary);
+    border-radius: 6px;
+    color: var(--text-primary);
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+.register-card button[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: var(--green);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.password-wrapper {
+    position: relative;
+}
+.password-wrapper input {
+    padding-right: 50px;
+}
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+.toggle-password svg { color: var(--text-secondary); }
+
+.sub-password-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+}
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+.forgot-password-inline {
+    font-size: 0.875rem;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.error-message { color: var(--red); }
+.login-link {
+    margin-top: 2rem;
+    color: var(--text-secondary);
+}
+.login-link a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+}

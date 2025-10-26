@@ -1,0 +1,241 @@
+.profile-container {
+    padding: 2rem;
+}
+
+.profile-card {
+    background-color: var(--surface);
+    border-radius: 8px;
+    border: 1px solid var(--secondary);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--secondary);
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+}
+
+.avatar svg {
+    width: 40px;
+    height: 40px;
+}
+
+.profile-info h2 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.5rem;
+}
+
+.profile-info p {
+    margin: 0;
+    color: var(--text-secondary);
+}
+
+.tags {
+    margin-top: 0.75rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.tag {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+.tag.green {
+    background-color: rgba(16, 185, 129, 0.1);
+    color: var(--green);
+}
+.tag.blue {
+    background-color: rgba(59, 130, 246, 0.1);
+    color: #3B82F6;
+}
+
+.profile-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 1.5rem;
+}
+
+.profile-details h4 {
+    margin: 0 0 0.25rem 0;
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+.profile-details p {
+    margin: 0;
+    font-weight: 500;
+}
+
+.status-active {
+    color: var(--green);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.status-active::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--green);
+}
+
+.profile-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.profile-stat-card {
+    background-color: var(--surface);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--secondary);
+}
+
+.profile-stat-card h4 {
+    margin: 0 0 0.5rem 0;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.profile-stat-card p {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.profile-stat-card span {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.profile-bottom-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.profile-activity-card {
+    background-color: var(--surface);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--secondary);
+}
+.profile-activity-card h3 {
+    margin-top: 0;
+}
+.profile-activity-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-activity-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--secondary);
+}
+
+.profile-activity-item:last-child {
+  border-bottom: none;
+}
+
+.no-activity-text {
+    color: var(--text-secondary);
+}
+
+.status-tag {
+  margin-left: auto;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+.status-tag.clean { color: var(--green); }
+.status-tag.threat { color: var(--red); }
+.edit-button {
+    margin-left: auto;
+    background: none;
+    border: 1px solid transparent; /* Added for spacing consistency on hover */
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    display: flex; /* Aligns icon and text */
+    align-items: center;
+    gap: 0.5rem; /* Space between icon and text */
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+.edit-button:hover {
+    background-color: var(--background);
+    color: var(--text-primary);
+}
+.edit-button svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Edit Form Styles */
+.profile-edit-form {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.form-inputs {
+    width: 100%;
+}
+
+.form-inputs input {
+    width: 100%;
+    background-color: var(--background);
+    border: 1px solid var(--secondary);
+    color: var(--text-primary);
+    padding: 0.75rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+.form-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-actions button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-save {
+    background-color: var(--green);
+    color: white;
+}
+
+.btn-cancel {
+    background-color: var(--secondary);
+    color: var(--text-primary);
+}

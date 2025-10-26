@@ -1,0 +1,84 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--surface);
+  border-bottom: 1px solid var(--secondary);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+.logo svg {
+  color: var(--green);
+}
+
+.logo h1 {
+  font-size: 1.25rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.nav-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-link {
+  display: flex;         /* Aligns icon and text horizontally */
+  align-items: center;   /* Aligns them vertically */
+  gap: 0.5rem;           /* Adds space between icon and text */
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--text-secondary);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.nav-link svg {
+    width: 16px;         /* Sets the icon size */
+    height: 16px;
+}
+
+.nav-link:hover {
+  background-color: var(--secondary);
+  color: var(--text-primary);
+}
+
+.nav-link.active {
+  background-color: var(--green);
+  color: #ffffff;
+}
+
+/* When the link is active, make the icon white too */
+.nav-link.active svg {
+  color: #ffffff;
+}
+.logout-button {
+  background-color: var(--secondary);
+  border: 1px solid var(--secondary);
+  color: var(--text-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  font-family: inherit; /* Ensures the font matches other buttons */
+  font-size: 0.875rem; /* Match font size of nav-link */
+}
+
+.logout-button:hover {
+  background-color: var(--red);
+  border-color: var(--red);
+  color: white;
+}
